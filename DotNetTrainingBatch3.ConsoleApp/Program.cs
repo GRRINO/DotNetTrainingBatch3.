@@ -1,6 +1,7 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using DotNetTrainingBatch3.ConsoleApp.AdoDotNetExamples;
 using DotNetTrainingBatch3.ConsoleApp.DapperExamples;
+using DotNetTrainingBatch3.ConsoleApp.EFCoreExamples;
 using System.Data;
 using System.Data.SqlClient;
 
@@ -62,4 +63,11 @@ DapperExample dapperExample = new DapperExample();
 //dapperExample.Edit(15);
 //dapperExample.Edit(20);
 //dapperExample.Update(15, "yyy", "yyy2", "yyy3");
+
+EFCoreExample efCoreExample = new EFCoreExample();
+//efCoreExample.creat("yyy", "yyy2", "yyy3");
+//efCoreExample.delete(16);
+//efCoreExample.read();
+//efCoreExample.edit(2);
+//efCoreExample.edit(23);
 Console.ReadLine();
