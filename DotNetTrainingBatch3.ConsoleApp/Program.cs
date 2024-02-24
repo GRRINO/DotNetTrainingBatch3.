@@ -2,6 +2,7 @@
 using DotNetTrainingBatch3.ConsoleApp.AdoDotNetExamples;
 using DotNetTrainingBatch3.ConsoleApp.DapperExamples;
 using DotNetTrainingBatch3.ConsoleApp.EFCoreExamples;
+using DotNetTrainingBatch3.ConsoleApp.HttpClientExamples;
 using System.Data;
 using System.Data.SqlClient;
 
@@ -47,7 +48,7 @@ Console.WriteLine("Hello, World!");
 
 Console.WriteLine();
 
-AdoDotNetExample adoDotNetExample = new AdoDotNetExample();
+//AdoDotNetExample adoDotNetExample = new AdoDotNetExample();
 //adoDotNetExample.read();
 //adoDotNetExample.Edit(1);
 //adoDotNetExample.Edit(0);
@@ -56,7 +57,7 @@ AdoDotNetExample adoDotNetExample = new AdoDotNetExample();
 
 //adoDotNetExample.Delete(13);
 
-DapperExample dapperExample = new DapperExample();
+//DapperExample dapperExample = new DapperExample();
 //dapperExample.Creat("yy", "yy2", "yy3");
 //dapperExample.Delete(15);
 //dapperExample.read();
@@ -64,10 +65,15 @@ DapperExample dapperExample = new DapperExample();
 //dapperExample.Edit(20);
 //dapperExample.Update(15, "yyy", "yyy2", "yyy3");
 
-EFCoreExample efCoreExample = new EFCoreExample();
+//EFCoreExample efCoreExample = new EFCoreExample();
 //efCoreExample.creat("yyy", "yyy2", "yyy3");
 //efCoreExample.delete(16);
 //efCoreExample.read();
 //efCoreExample.edit(2);
 //efCoreExample.edit(23);
+Console.WriteLine("Waiting for api");
+Console.ReadLine();
+
+HttpClientExample example = new HttpClientExample();
+await example.run();
 Console.ReadLine();

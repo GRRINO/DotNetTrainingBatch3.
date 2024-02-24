@@ -17,12 +17,4 @@ namespace DotNetTrainingBatch3.ConsoleApp.Models
         public string BlogAuthor {  get; set; }
         public string BlogContent {  get; set; }
     }
-
-     public class jsonPlaceholderModel
-    {
-        public int userId { get; set; }
-        public int id { get; set; }
-        public string title { get; set; }
-        public string body { get; set; }
-    }
 }
